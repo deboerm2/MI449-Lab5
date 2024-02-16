@@ -1,50 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900:400&display=swap');
+
+:root{
+    --mainTextColor-: #2D3142;
+    --mainFont-: "Inter";
+    --headerWeight-: 900;
+    --contentTextSize-: 1.5em;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
+    font-family: var(--mainFont-), sans-serif;
+    background: #f4f4f2;
+    color: var(--mainTextColor-);
     padding: 0 40px;
     text-align: center;
 }
 
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    list-style-type: none;
-    margin: 0;
-}
-
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
 h1 {
+    font-family: var(--mainFont-), sans-serif;
+    font-weight: var(--headerWeight-);
+    font-size: 1em;
+    margin: 20px;
+    text-align: left;
+}
+.hero h2{
+    font-family: var(--mainFont-), sans-serif;
+    font-weight: var(--headerWeight-);
     font-size: 8em;
-    letter-spacing: -2px;
+    margin: 0;
+    padding:0;
+    line-height: 1em;
+    text-transform: uppercase;
+    word-spacing: -5px;
+}
+h3{
+    font-family: var(--mainFont-), sans-serif;
+    font-weight: var(--headerWeight-);
+    font-size: 3em;
+    word-spacing: -5px;
+    
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+main{
+    background: url("/images/polaroid.png") no-repeat center 100px;
+    margin: 0 auto;
+    width: 800px;
 }
 
-img.about {
-    opacity: 0.5;
+.hero{
+    min-height: 800px;
+}
+p{
+    font-size: var(--contentTextSize-);
+    text-align: left;
+}
+.list ul{
+    list-style: none;
+}
+.list ul li{
+    text-align: left;
+    font-size: var(--contentTextSize-);
+    padding: 15px 0 15px 80px;
+    margin: 10px 0;
+
+}
+.wifi{
+    background: url(/images/wifi-solid\ 1.png) no-repeat center left;
+}
+.cloud{
+    background: url(/images/cloud-arrow-up-solid\ 1.png) no-repeat center left;
+}
+.qrCode{
+    background: url(/images/qrcode-solid\ 1.png) no-repeat center left;
+}
+.photos{
+    background: url(/images/photo-film-solid\ 1.png) no-repeat center left;
+}
+.email form{
+    background-color: rgb(232, 232, 232);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0.5cm;
+    text-align: center;
+}
+.email input{
+    border: none;
+    font-family: var(--mainFont-), sans-serif;
+    height: 45px;
+    
+}
+.textField{
+    width: 600px;
+}
+.submitButton{
+    background-color: red;
+    font-weight: var(--headerWeight-);
+    text-transform: uppercase;
+    color: #fffff7;
+    width: 150px;
 }
